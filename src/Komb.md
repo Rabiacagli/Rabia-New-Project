@@ -1,6 +1,8 @@
-N elemanlı bir kümenin elemanları ile oluşturulacak r elemanlı farklı grupların sayısı n’in r’li kombinasyonu olarak adlandırılır. N’in r’li kombinasyonu C(n,r) şeklinde gösterilir.
-
-Java ile kombinasyon hesaplayan program yazınız.
-
-Kombinasyon formülü
-C(n,r) = n! / (r! * (n-r)!)
+***********    1       0        11
+ *********     2       1        9
+  *******      3       2        7
+   *****       4       3        5
+    ***        5       4        3
+     *         6       5        1
+            
+               i      i-n      
