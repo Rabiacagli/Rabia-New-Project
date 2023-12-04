@@ -1,6 +1,6 @@
 public class HemUceHemDordeBolunme {
     public static void main(String[] args) {
-        for(int i = 1; i < 50; i++){
+        for(int i = 1; i < 50; i++){ //1'den 50'ye kadar olan sayilari ifade eder ve bu kosullari bu aralikta saglayacak
 
             if(i % 3 == 0 && i % 4 == 0 ) { // hem 3'e hem de 4'e bolunme kosulunu kontrol eder.
 
