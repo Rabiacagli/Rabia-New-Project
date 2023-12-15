@@ -1,22 +1,26 @@
 import java.util.Scanner;
 public class Taksimetre {
     public static void main(String[] args) {
-        double mesafe, toplamtutar;
-        Scanner input= new Scanner(System.in);
 
+        // Java ile gidilen mesafeye (KM) göre taksimetre tutarını ekrana yazdıran programı yazın.
+        //
+        //Taksimetre KM başına 2.20 TL tutmaktadır.
+        //Minimum ödenecek tutar 20 TL'dir. 20 TL altında ki ücretlerde yine 20 TL alınacaktır.
+        //Taksimetre açılış ücreti 10 TL'dir.
+
+
+        int km;
+        double perKm = 2.20 , toplamtutar, startPrice = 10 ;
+
+        // Scanner sınıfı oluşturuyoruz
+        Scanner input= new Scanner(System.in);
         System.out.print("Mesafeyi Giriniz: ");
 
-        mesafe= input.nextDouble();
+        toplamtutar = km * perKm;
+        toplamtutar += startPrice;
 
-        toplamtutar = (mesafe*2.20) + 10 ;
+        toplamtutar = ( toplamtutar < 20) ? 20 : toplamtutar;
 
-        if(toplamtutar<20){
-
-        System.out.println(" Toplam Tutar: 20 TL" );
-
-         } else {
-
-        System.out.println("Toplam Tutar : " + toplamtutar);
-        }
-}
+        System.out.println("Toplam Tutar: " + toplamtutar "Tl");
+    }
 }
